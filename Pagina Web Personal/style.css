@@ -15,6 +15,8 @@ h1{
 }
 
 h2{
+    text-align: center;
+    font-size: 70px;
     color: #0D353B;
 }
 
@@ -41,6 +43,10 @@ hr{
 
 div{
     margin: 6%;
+}
+
+footer{
+    text-align: center;
 }
 
 .intro{
