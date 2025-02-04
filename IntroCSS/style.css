@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(74, 41, 105);
+}
+
+h1{
+    color: rgb(218, 102, 194);
+}
+
+p{
+    color: rgb(162, 97, 153);
+}
+
+h2{
+    color: rgb(227, 102, 191);
+}
+
+section{
+    background-color: rgb(51, 28, 73);
+    padding: 10px;
+    margin: 10px;
+}
+section > h2{
+    position: center;
+}
