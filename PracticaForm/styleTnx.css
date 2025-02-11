@@ -1,0 +1,39 @@
+body{
+    padding: 20px;
+    text-align: center;
+    font-family: "IBM Plex Sans Condensed", serif;
+    background-image: url("imgs/onepieceBackground.jpg");
+    align-items: center;
+}
+
+#container{
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 60px;
+}
+
+h1{
+    background-color: rgb(184, 52, 178); ;
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    background-color: rgb(255, 255, 255);
+    color: rgb(184, 52, 178); ;;
+}
+
+button{
+    width: 30%;
+    background-color: rgb(231, 145, 227);
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: "IBM Plex Sans Condensed", serif;
+    font-size: 20px;
+}
+
+button:hover{
+    color: rgb(184, 52, 178);
+    background-color: rgb(238, 173, 234);
+}
