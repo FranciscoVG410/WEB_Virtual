@@ -28,6 +28,10 @@ body{
     display: inline-flex;
 }
 
+form{
+    max-width: 100%;
+}
+
 label{
     font-weight: bold;
     color: rgb(184, 52, 178);
@@ -35,7 +39,7 @@ label{
 }
 
 input{
-    width: 100%;
+    width: 30%;
     padding: 8px;
     margin: 8px;
     box-sizing: border-box;
@@ -45,7 +49,7 @@ input{
 }
 
 button{
-    width: 20%;
+    width: 50%;
     background-color: rgb(231, 145, 227);
     color: white;
     font-weight: bold;
@@ -64,8 +68,9 @@ button:hover{
 select{
     font-family: "IBM Plex Sans Condensed", serif;
     font-size: 10;
+    width: 10%;
 }
 
-.radio{
+#radio{
     display: flex;
 }

@@ -20,9 +20,11 @@
 
         <Form>
         <label for="title">Title: </label>
+        <br>
         <input type="text" name="title" required>
-
+        <br>
         <label for="gender">Gender: </label>
+        <br>
         <select name="" id="">
             <option value="">Seleccionar</option>
             <option value="action">Action</option>
@@ -34,38 +36,46 @@
         </select>
 
         <br>
-        <label for="demographic">Demographic: </label>
-        <input type="radio" id="shonen" name="demographic" value="Shōnen">
-        <label for="shonen">Shōnen</label>
+        <br>
+        <div id="radio">
+            <label for="demographic">Demographic: </label>
+            <input type="radio" id="shonen" name="demographic" value="Shōnen">
+            <label for="shonen">Shōnen</label>
+            <input type="radio" id="shojo" name="demographic" value="Shōjo">
+            <label for="shojo">Shōjo</label>
 
-        <input type="radio" id="shojo" name="demographic" value="Shōjo">
-        <label for="shojo">Shōjo</label>
-
-        <input type="radio" id="seinen" name="demographic" value="Seinen">
-        <label for="seinen">Seinen</label>
+            <input type="radio" id="seinen" name="demographic" value="Seinen">
+            <label for="seinen">Seinen</label>
+        </div>
         
         <br>
 
         <label for="volume">Volume: </label>
+        <br>
         <input type="number" name="volume" required>
-
+        <br>
         <label for="autor">Autor:</label>
+        <br>
         <input type="text" name="autor">
-
+        <br>
         <label for="editorial">Editorial:</label>
+        <br>
         <input type="text" name="editorial">
-
+        <br>
         <label for="language">Language: </label>
+        <br>
         <input type="text" name="language" required>
-        
+        <br>
         <label for="date">Date of publish:</label>
+        <br>
         <input type="date" name="date">
-
+        <br>
         <label for="characters">Principal Character:</label>
+        <br>
         <input type="text" name="characters">
-
+        <br>
         <input type="checkbox" name="yes">
-
+        <br>
         <label for="">ALL THE INFO IS CORRECT</label>
         <br>
         <button type="submit">SUBMIT</button>
