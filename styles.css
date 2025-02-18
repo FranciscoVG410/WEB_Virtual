@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    border-radius: 30px;
+}
+
+h3{
+    color: aliceblue;
+}
+
+.gallery{
+    display: flexbox;
+    text-align: center;
+    margin: 20px;
+}
