@@ -1,23 +1,50 @@
 body{
     background-color: black;
+    font-family: "Archivo Black", serif;
 }
 
 h1{
-    color: aliceblue;
+    color: rgb(194, 70, 70);
     text-align: center;
+    font-size: 90px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 5px;
+    font-size: 40px;
+}
+
+div{
+    background-color: rgb(43, 43, 43);
+    margin: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
 }
 
 img{
     width: 50%;
     border-radius: 30px;
+    border: 6px solid rgb(255, 255, 255);
 }
 
 h3{
-    color: aliceblue;
+    color: rgb(226, 70, 70);
+    font-size: 80px;
 }
 
 .gallery{
     display: flexbox;
     text-align: center;
     margin: 20px;
+    
+}
+
+.Text{
+    text-align: center;
+}
+
+.gallery p{
+    margin: 50px;
 }
