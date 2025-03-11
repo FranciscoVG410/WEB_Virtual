@@ -1,32 +1,39 @@
 const boton = document.getElementById("agregar");
-
 let tareas = [];
 
-boton.onclick = function(){
+boton.onclick = function () {
     agregarTarea();
-}
+};
 
-function agregarTarea(){
+function agregarTarea() {
     let campo = document.getElementById("tarea");
-    let tarea = campo.value;
-    if (tarea === "" ) {
-        alert("esta vacio el campo");
-    }else{
+    let tarea = campo.value.trim(); // Elimina espacios en blanco
 
-        let lista = document.getElementById("lista_tareas");
-        tareas.push(tarea);
-        let li = document.createElement("li");
-
-        li.innerHTML = tarea;
-        let boton_eliminar = document.createElement("button")
-        boton_eliminar.innerHTML = "Eliminar";
-        boton_eliminar.class
-
-
-        li.onclick =function(){
-            li.classList.toggle("tachado");
-        }
-
-        lista.appendChild(li);
+    if (tarea === "") {
+        alert("El campo está vacío");
+        return;
     }
+
+    let lista = document.getElementById("lista_tareas");
+    tareas.push(tarea);
+
+    let li = document.createElement("li");
+    li.innerHTML = tarea;
+
+    let botonEliminar = document.createElement("button");
+    botonEliminar.innerHTML = "Eliminar";
+    botonEliminar.classList.add("eliminar");
+
+    botonEliminar.onclick = function () {
+        lista.removeChild(li);
+    };
+
+    li.onclick = function () {
+        li.classList.toggle("tachado");
+    };
+
+    li.appendChild(botonEliminar);
+    lista.appendChild(li);
+
+    campo.value = ""; // Limpia el campo de entrada
 }

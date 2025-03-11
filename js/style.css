@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(170, 212, 136);
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: #f0f0f0;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.tachado {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.eliminar {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.eliminar:hover {
+    background: darkred;
+}
