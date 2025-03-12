@@ -7,7 +7,7 @@ boton.onclick = function () {
 
 function agregarTarea() {
     let campo = document.getElementById("tarea");
-    let tarea = campo.value.trim(); // Elimina espacios en blanco
+    let tarea = campo.value.trim();
 
     if (tarea === "") {
         alert("El campo está vacío");
@@ -35,5 +35,5 @@ function agregarTarea() {
     li.appendChild(botonEliminar);
     lista.appendChild(li);
 
-    campo.value = ""; // Limpia el campo de entrada
+    campo.value = ""
 }

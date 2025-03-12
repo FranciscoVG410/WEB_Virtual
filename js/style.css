@@ -3,6 +3,12 @@ body{
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
 }
+
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -23,6 +29,21 @@ li {
     color: gray;
 }
 
+#agregar{
+    background: #21a337;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 25px;
+}
+
+#tarea{
+    font-size: 25px;
+}
+
 .eliminar {
     background: red;
     color: white;
@@ -31,8 +52,47 @@ li {
     margin-left: 10px;
     cursor: pointer;
     border-radius: 3px;
+    font-size: 25px;
 }
 
 .eliminar:hover {
     background: darkred;
 }
+
+.container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#lista_tareas {
+    width: 40%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lista_tareas li {
+    font-size: 25px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
