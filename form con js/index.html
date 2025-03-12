@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>PELICULAS</h1>
+
+        <form id="formulario">
+            <input id="titulo" class="form-control" type="text"
+            name="titulo" placeholder="Nombre de la pelicula">
+
+            <input id="anio" class="form-control" type="number"
+            name="anio" placeholder="2025">
+
+            <select id="titulo" class="form-select">
+                <option value="horror">Horror</option>
+            </select>
+
+            <input id="director" class="form-control" type="text"
+            name="director" placeholder="Director">
+
+            <button class="btn btn-primary" type="submit">AGREGAR</button>
+        </form>
+
+        <h3>Lista de peliculas</h3>
+        <table class="table">
+            <thead>
+                <td>Titulo</td>
+                <td>Año</td>
+            </thead>
+            <tbody id="cuerpo_tabla">
+
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
