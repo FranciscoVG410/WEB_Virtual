@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <div class="container">
-        <h1>PELICULAS</h1>
+        <h1>REGI MOVIE</h1>
 
         <form id="formulario">
             <input id="titulo" class="form-control" type="text"
             name="titulo" placeholder="Nombre de la pelicula">
-
+            <br>
             <input id="anio" class="form-control" type="number"
             name="anio" placeholder="2025">
-
-            <select id="titulo" class="form-select">
-                <option value="horror">Horror</option>
+            <br>
+            <select id="genero" class="form-select">
+                <option value="Horror">Horror</option>
+                <option value="Accion">Accion</option>
+                <option value="Romance">Romance</option>
+                <option value="Animacion">Animacion</option>
+                <option value="Documental">Documental</option>
             </select>
-
+            <br>
             <input id="director" class="form-control" type="text"
             name="director" placeholder="Director">
-
+            <br>
             <button class="btn btn-primary" type="submit">AGREGAR</button>
         </form>
-
-        <h3>Lista de peliculas</h3>
+        <br>    
+        <h3>Peliculas Registradas</h3>
         <table class="table">
             <thead>
                 <td>Titulo</td>
                 <td>Año</td>
+                <td>Categoria</td>
+                <td>Director</td>
+                <td>Delete</td>
+                <td>Editar</td>
             </thead>
             <tbody id="cuerpo_tabla">
-
             </tbody>
         </table>
     </div>
